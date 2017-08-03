@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            LOGIN
+        </title>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/main.css" rel="stylesheet" />
+
+    <script src="/assets/angular.js"></script>
+    </head>
+    <body ng-app="myApp" ng-controller="MainController1 as vm">
+        <center>
+            <h1>Please enter your login credentials</h1>
+            <form class = "main" ng-controller="MainController">
+                <h3>Username</h3><input type = "text" value = "Enter your name" id = "uname"/>
+                <h4>Password</h4><input type = "password" value = "****Password****" id = "pswd"/>
+                <input type = "submit" value = "login" ng-click ="submit()"/>
+            </form>
+            {{vm.message}}
+        </center>
+    <!-- Modules -->
+    <script src="/page_assets/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="/page_assets/MainController.js"></script>
+    </body>
+</html>
